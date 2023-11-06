@@ -14,9 +14,10 @@
   }
 
   &__menu-opener {
+    transition-duration: 0.3s;
+    
     &:hover {
       background-image: url(../images/menu_hover.svg);
-      
     }
   }
 

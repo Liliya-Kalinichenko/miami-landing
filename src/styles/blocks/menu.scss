@@ -37,9 +37,10 @@
     color: #fff;
     transition: border-color 0.3s;
 
+    @include hover (transform, scale(1.2));
+
     &:hover {
       border-color: #fff;
-      @include hover (transform, scale(1.2));
     }
   }
 

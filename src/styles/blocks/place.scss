@@ -4,12 +4,8 @@
     width: 100%;
     box-sizing: border-box;
     max-height: 256px;
+    border-radius: 8px;
     overflow: hidden;
-
-    &:hover {
-      z-index: 1;
-      @include hover (transform, scale(1.2));
-    }
 
     &::after {
       content: "";
@@ -29,7 +25,13 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
-    border-radius: 8px;
+    transition-duration: 0.3s;
+
+    @include hover (transform, scale(1.1));
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   &__photos {
@@ -46,6 +48,6 @@
     color: $colorBlue;
     text-decoration: none;
 
-    @include hover (scale, 1.2);
+    @include hover (scale, 1.1);
   }
 }
